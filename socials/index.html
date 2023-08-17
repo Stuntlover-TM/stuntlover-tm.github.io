@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Links</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #ff44ff 270%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .social-link {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(252, 216, 255);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+  .social-link:hover {
+    background-color: #ccc;
+  }
+  .social-link .tooltip {
+    position: absolute;
+    top: 100%; /* Change bottom to top */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    width: 100%; /* Full width */
+    text-align: center; /* Center-align the text */
+    margin-top: 5px; /* Add space between button and tooltip */
+  }
+  .social-link:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  .button {
+    display: block;
+    padding: 15px 25px;
+    background-color: rgb(252, 216, 255);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .button:hover {
+    background-color: #ccc;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Connect with me:</h1>
+  <div class="social-links">
+    <a href="https://www.youtube.com/Stuntlover-TM" class="social-link">YouTube</a>
+    <a href="https://github.com/Stuntlover-TM" class="social-link">GitHub</a>
+    <a href="" class="social-link">Discord<span class="tooltip">Discord: stuntlover#0</span></a>
+  </div>
+</div>
+<div class="button-container">
+  <a href="https://stuntlover-tm.github.io/projects/index.html" class="button">Projects</a>
+  <a href="https://stuntlover-tm.github.io/socials/index.html" class="button">Socials</a>
+  <a href="https://stuntlover-tm.github.io/index.html" class="button">Home</a>
+</div>
+</body>
+</html>
